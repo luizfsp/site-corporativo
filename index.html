@@ -715,7 +715,7 @@ $("#footer > div.container.contacts > div > div.col-12.col-md-4.social > p").htm
                         <li class="menu-home">
                             <span class="menuTranslate" onclick="goTranslate('#layerHome')"><i class="fa fa-home"></i>&nbsp;Home</span>
                         </li>
-                        <li class='nav-item'><a class='item_menu_raiz_desk nav-link' target='_self' href='publicacao_id-568990.html'>O Escritório</a></li>
+                        <li class='nav-item'><a class='item_menu_raiz_desk nav-link' target='_self' href='publicacao_id-568990.html'>O Escritório</a></li><li class='nav-item'><a class='item_menu_raiz[...]
                         <li class="menu-contato">
                             <span class="menuTranslate" onclick="goTranslate('#contatoHome')">Contato</span>
                         </li>
@@ -728,11 +728,29 @@ $("#footer > div.container.contacts > div > div.col-12.col-md-4.social > p").htm
 <div class="redeSocial">
     
 			<script>
+				var facebook = `#`;
+			</script>
+            <div class="itenSocial">
+                <a class='icone-facebook' target="_blank" href="#" aria-label="facebook">
+                    <i class='bi bi-facebook'></i>
+                </a>
+            </div>
+        
+			<script>
 				var instagram = `#`;
 			</script>
             <div class="itenSocial">
                 <a class='icone-instagram' target="_blank" href="#" aria-label="instagram">
                     <i class='bi bi-instagram'></i>
+                </a>
+            </div>
+        
+			<script>
+				var linkedin = `#`;
+			</script>
+            <div class="itenSocial">
+                <a class='icone-linkedin' target="_blank" href="#" aria-label="linkedin">
+                    <i class='bi bi-linkedin'></i>
                 </a>
             </div>
         
@@ -917,18 +935,61 @@ $("#footer > div.container.contacts > div > div.col-12.col-md-4.social > p").htm
             <div class="header-mobile-menu col-5 text-right">
 
                 <div class="menu">
-                    <ul class="menu-principal menuPrincipalMobile">
-                        <li class="menu-home">
-                            <span class="menuTranslate" onclick="goTranslate('#layerHome')"><i class="fa fa-home"></i>&nbsp;Home</span>
-                        </li>
-                        <li><a href='publicacao_id-568990.html' class="nav-link">O Escritório</a></li>
-                        <li class="menu-contato">
-                            <span class="menuTranslate" onclick="goTranslate('#contatoHome')">Contato</span>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-    </nav>
-</body>
-</html>
+                    
+
+
+
+
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;600&display=swap');
+
+
+    :root {
+        --colorFontMenuMobile: #fff;
+        --backgroundFundoMenuMobile: #000000eb;
+    }
+
+    .redesSociaisMenu .redeSocial {
+        justify-content: center;
+    }
+
+    .menu-principal.menuPrincipalMobile {
+        padding: 0px;
+        list-style: none;
+        text-align: center;
+        text-transform: uppercase;
+        overflow: auto;
+        color: var(--colorFontMenuMobile);
+    }
+
+        .menu-principal.menuPrincipalMobile > li > :first-child {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 600 !important;
+            text-transform: uppercase;
+        }
+
+        .menu-principal.menuPrincipalMobile .submenu-item.nav-link {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 12px!important;
+            font-weight: 200 !important;
+            padding: 0px;
+            padding-bottom: 10px;
+            color:#fff;
+        }
+
+        .menu-principal.menuPrincipalMobile .nav-link {
+            display: block;
+            padding: 0.5rem 1rem;
+            letter-spacing: 1px;
+            word-spacing: 1px;
+            font-size: 18px;
+            line-height: 35px;
+        }
+
+    .fundoMenuMobile ul {
+        padding: 0;
+    }
+
+    .menu-principal.menuPrincipalMobile .submenu {
+        display: none;
+[...]
